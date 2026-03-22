@@ -18,7 +18,7 @@ old_header = """  <header class="header">
 
       <div class="logo">
         <a href="../index.html">
-          <img src="../image/logo.png" alt="Safe Hands Packers & Movers">
+          <img src="../image/logo.png" alt="Satya Packersmovers">
         </a>
       </div>
     </div>
@@ -40,7 +40,7 @@ new_header = """  <!-- ================= TOPBAR ================= -->
     <div class="nav">
       <div class="logo">
         <a href="../index.html">
-          <img src="../image/logo.png" alt="Safe Hands Packers & Movers">
+          <img src="../image/logo.png" alt="Satya Packersmovers">
         </a>
       </div>
 

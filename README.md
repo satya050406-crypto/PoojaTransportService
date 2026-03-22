@@ -1,4 +1,4 @@
-# Safe Hands Packers and Movers
+# Satya Packersmovers
 
-Safe Hands Packers and Movers website.
+Satya Packersmovers website.
 Professional shifting services in Lucknow, Kanpur, Varanasi, Dehradun, and Greater Noida.
