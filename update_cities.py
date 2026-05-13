@@ -18,7 +18,7 @@ old_header = """  <header class="header">
 
       <div class="logo">
         <a href="../index.html">
-          <img src="../image/logo.png" alt="Satya Packersmovers">
+          <img src="../image/logo.png" alt="Pooja Transport Service">
         </a>
       </div>
     </div>
@@ -28,7 +28,7 @@ new_header = """  <!-- ================= TOPBAR ================= -->
   <div class="topbar">
     <div class="topbar-contact">
       <span>📞 +91 9211396141</span>
-      <span class="hide-mobile">📧 safehandspackersmovers05@gmail.com</span>
+      <span class="hide-mobile">📧 poojatransportservice3@gmail.com</span>
     </div>
     <div class="topbar-social">
       <a href="../contact.html">24/7 Support Available</a>
@@ -40,7 +40,7 @@ new_header = """  <!-- ================= TOPBAR ================= -->
     <div class="nav">
       <div class="logo">
         <a href="../index.html">
-          <img src="../image/logo.png" alt="Satya Packersmovers">
+          <img src="../image/logo.png" alt="Pooja Transport Service">
         </a>
       </div>
 

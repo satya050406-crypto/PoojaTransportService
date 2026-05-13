@@ -3,110 +3,36 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Our Services | Satya Packersmovers</title>
+  <title>Our Services | Pooja Transport Service - Reliable Relocation Solutions</title>
   <meta name="description"
-    content="Explore our professional relocation services including house shifting, office relocation, vehicle transport, and warehousing solutions.">
+    content="Explore our professional shifting services: House moving, office relocation, vehicle transport, and warehousing. Safe, fast, and affordable.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="Css/style.css">
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Css/redesign.css">
   <link rel="icon" type="image/png" href="favicon.ico.png">
   <style>
-    .service-hero {
-      background: linear-gradient(to right, rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.5)), url('https://images.unsplash.com/photo-1512418490979-92798ccc13b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      padding: 120px 8%;
+    .page-hero {
+      background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1512418490979-92798ccc13b0?q=80&w=2000&auto=format&fit=crop') center/cover;
+      padding: 6rem 0;
       text-align: center;
-      color: #fff;
-      animation: fadeIn 1s ease forwards;
+      color: white;
     }
-
-    .service-hero h1 {
-      font-size: 50px;
-      color: var(--secondary);
-      margin-bottom: 15px;
-      text-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      animation: fadeUp 1s ease forwards;
-    }
-    
-    .service-hero p {
-      font-size: 18px;
-      animation: fadeUp 1s ease forwards;
-      animation-delay: 0.2s;
-    }
-
-    .service-detail-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 40px;
-      padding: 90px 8%;
-      background: var(--bg-color);
-    }
-
-    .service-detail-card {
-      background: var(--surface);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: var(--transition);
-      border-top: 5px solid transparent;
-    }
-
-    .service-detail-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-md);
-      border-top-color: var(--primary);
-    }
-
-    .service-img {
-      height: 220px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .service-content {
-      padding: 30px;
-    }
-
-    .service-content h2 {
-      color: var(--text-main);
-      margin-bottom: 15px;
-      font-size: 24px;
-      transition: var(--transition);
-    }
-    
-    .service-detail-card:hover .service-content h2 {
-      color: var(--primary);
-    }
-
-    .service-content p {
-      color: var(--text-muted);
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-    .feature-list {
-      list-style: none;
-      margin-bottom: 30px;
-    }
-
-    .feature-list li {
-      margin-bottom: 10px;
-      padding-left: 28px;
-      position: relative;
-      font-size: 15px;
+    .service-detail-list {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
     }
-
-    .feature-list li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      color: var(--secondary);
-      font-weight: bold;
+    .service-detail-list li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .service-detail-list i {
+      color: var(--accent);
+      font-size: 0.8rem;
     }
   </style>
 </head>
@@ -114,174 +40,203 @@
 <body>
 
   <!-- ================= TOPBAR ================= -->
-  <div class="topbar">
-    <div class="topbar-contact">
-      <span>📞 +91 9211396141</span>
-      <span class="hide-mobile">📧 safehandspackersmovers05@gmail.com</span>
-    </div>
-    <div class="topbar-social">
-      <a href="contact.html">24/7 Support Available</a>
+  <div class="new-topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span><i class="fas fa-phone"></i> +91 9211396141</span>
+        <span class="hide-mobile"><i class="fas fa-envelope"></i> poojatransportservice3@gmail.com</span>
+      </div>
+      <div class="topbar-info hide-mobile">
+        <span><i class="fas fa-certificate"></i> ISO 9001:2015 Certified</span>
+        <span><i class="fas fa-clock"></i> 24/7 Support Available</span>
+      </div>
     </div>
   </div>
 
   <!-- ================= HEADER ================= -->
-  <header class="header">
-    <div class="nav">
-      <div class="logo">
+  <header class="new-header">
+    <div class="container">
+      <div class="new-logo">
         <a href="index.html">
-          <img src="image/logo.png" alt="Satya Packersmovers">
+          <img src="image/logo.png" alt="Pooja Transport Service">
         </a>
       </div>
-
-      <nav>
+      <nav class="new-nav">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About Us</a>
         <a href="service.html">Services</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="tel:+919211396141" class="btn btn-primary hide-mobile">
+        <i class="fas fa-headset" style="margin-right: 8px;"></i> Book Now
+      </a>
     </div>
   </header>
 
   <!-- ================= HERO ================= -->
-  <section class="service-hero">
-    <h1>Premium Relocation Services</h1>
-    <p>Satya Packersmovers - Your Trusted Partner in Every Move</p>
+  <section class="page-hero">
+    <div class="container">
+      <h1 style="font-size: 3rem; margin-bottom: 1rem;">Our Shifting Services</h1>
+      <p style="font-size: 1.25rem; opacity: 0.9;">Professional, Precise & Personalized Relocation for Every Need</p>
+    </div>
   </section>
 
-  <!-- ================= SERVICES GRID ================= -->
-  <section class="service-detail-grid">
+  <!-- ================= SERVICES CONTENT ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="services-grid">
+        <!-- 1. House Shifting -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="House Shifting">
+          </div>
+          <div class="service-content">
+            <h3>House Shifting</h3>
+            <p>We handle your household relocation with professional packing and safe transportation, ensuring your kitchenware, electronics, and furniture arrive exactly as they left.</p>
+            <ul class="service-detail-list">
+              <li><i class="fas fa-check"></i> Multi-layer quality packing</li>
+              <li><i class="fas fa-check"></i> Safe loading & unloading</li>
+              <li><i class="fas fa-check"></i> Furniture assembly/disassembly</li>
+              <li><i class="fas fa-check"></i> Door-to-door delivery</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%;">Enquire Now</a>
+          </div>
+        </div>
 
-    <!-- House Shifting -->
-    <div class="service-detail-card">
-      <div class="service-img"
-        style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
-      </div>
-      <div class="service-content">
-        <h2>House Shifting</h2>
-        <p>We provide hassle-free household relocation services with professional packing and safe transportation.</p>
-        <ul class="feature-list">
-          <li>Multi-layer quality packing</li>
-          <li>Careful loading & unloading</li>
-          <li>Safe Furniture dismantling & assembly</li>
-          <li>Door-to-door timely delivery</li>
-        </ul>
-        <a href="contact.html" class="btn">Book Now</a>
+        <!-- 2. Office Relocation -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" alt="Office Shifting">
+          </div>
+          <div class="service-content">
+            <h3>Office Relocation</h3>
+            <p>Expert corporate shifting solutions designed to minimize downtime. We systematically pack server racks, IT gear, and vital documents with 100% security.</p>
+            <ul class="service-detail-list">
+              <li><i class="fas fa-check"></i> IT equipment specialized packing</li>
+              <li><i class="fas fa-check"></i> Systematic labeling & inventory</li>
+              <li><i class="fas fa-check"></i> Weekend/After-hours shifting</li>
+              <li><i class="fas fa-check"></i> Secure documents transport</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%;">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- 3. Vehicle Transport -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" alt="Car Transport">
+          </div>
+          <div class="service-content">
+            <h3>Vehicle Transport</h3>
+            <p>Dedicated Car and Bike transportation using specialized safe carriers. We offer door-to-door pickup and delivery with real-time tracking.</p>
+            <ul class="service-detail-list">
+              <li><i class="fas fa-check"></i> Enclosed safe car carriers</li>
+              <li><i class="fas fa-check"></i> Scratch-proof bike packing</li>
+              <li><i class="fas fa-check"></i> Full transit insurance support</li>
+              <li><i class="fas fa-check"></i> GPS tracking updates</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%;">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- 4. Warehousing -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop" alt="Warehousing">
+          </div>
+          <div class="service-content">
+            <h3>Warehousing & Storage</h3>
+            <p>Secure, moisture-free, and CCTV-monitored storage space for your valuable belongings. Ideal for long-term storage or delayed possession.</p>
+            <ul class="service-detail-list">
+              <li><i class="fas fa-check"></i> Short & Long-term storage</li>
+              <li><i class="fas fa-check"></i> 24/7 CCTV & Security guards</li>
+              <li><i class="fas fa-check"></i> Pest-controlled environment</li>
+              <li><i class="fas fa-check"></i> Easy goods retrieval</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%;">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- 5. Local Shifting -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1621905252507-b354bcadc08b?q=80&w=800&auto=format&fit=crop" alt="Local Shifting">
+          </div>
+          <div class="service-content">
+            <h3>Local Shifting</h3>
+            <p>Fast and efficient shifting services within your city (Delhi, Noida, Ghaziabad, Lucknow) at the most competitive budget pricing.</p>
+            <ul class="service-detail-list">
+              <li><i class="fas fa-check"></i> Same-day shifting service</li>
+              <li><i class="fas fa-check"></i> Professional local crew</li>
+              <li><i class="fas fa-check"></i> Small/Large truck options</li>
+              <li><i class="fas fa-check"></i> Affordable fixed rates</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%;">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- 6. Packing & Unpacking -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="Packing">
+          </div>
+          <div class="service-content">
+            <h3>Packing & Unpacking</h3>
+            <p>Our expert packing services use 5-layer corrugated sheets, bubble wrap, and sturdy cartons to ensure zero damage even during long hauls.</p>
+            <ul class="service-detail-list">
+              <li><i class="fas fa-check"></i> Fragile item specialization</li>
+              <li><i class="fas fa-check"></i> High-grade packing materials</li>
+              <li><i class="fas fa-check"></i> Professional unpacking crew</li>
+              <li><i class="fas fa-check"></i> Debris removal included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%;">Enquire Now</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Office Relocation -->
-    <div class="service-detail-card">
-      <div class="service-img"
-        style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
-      </div>
-      <div class="service-content">
-        <h2>Office Relocation</h2>
-        <p>Expert corporate shifting solutions designed to minimize downtime and ensure server/IT safety.</p>
-        <ul class="feature-list">
-          <li>IT equipment specialized packing</li>
-          <li>Systematic labeling & inventory</li>
-          <li>Weekend/After-hours shifting</li>
-          <li>Secure files & documents transport</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Free Quote</a>
-      </div>
-    </div>
-
-    <!-- Vehicle Transport -->
-    <div class="service-detail-card">
-      <div class="service-img"
-        style="background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
-      </div>
-      <div class="service-content">
-        <h2>Vehicle Transport</h2>
-        <p>Dedicated Car and Bike transportation across India using specialized safe carriers.</p>
-        <ul class="feature-list">
-          <li>Enclosed car carriers</li>
-          <li>Scratch-proof bike packing</li>
-          <li>Real-time tracking updates</li>
-          <li>Full transit insurance support</li>
-        </ul>
-        <a href="contact.html" class="btn">Call for Quote</a>
-      </div>
-    </div>
-
-    <!-- Warehousing -->
-    <div class="service-detail-card">
-      <div class="service-img"
-        style="background-image: url('https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
-      </div>
-      <div class="service-content">
-        <h2>Warehousing & Storage</h2>
-        <p>Secure, moisture-free, and CCTV-monitored storage space for your valuable belongings.</p>
-        <ul class="feature-list">
-          <li>Short-term & long-term plans</li>
-          <li>24/7 security monitoring</li>
-          <li>Pest-controlled environment</li>
-          <li>Easy retrieval of goods</li>
-        </ul>
-        <a href="contact.html" class="btn">Inquire Space</a>
-      </div>
-    </div>
-
-    <!-- Local Shifting -->
-    <div class="service-detail-card">
-      <div class="service-img" style="background-image: url('image/local_shifting.png');">
-      </div>
-      <div class="service-content">
-        <h2>Local Shifting</h2>
-        <p>Fast and efficient shifting services within your city at low-budget pricing.</p>
-        <ul class="feature-list">
-          <li>Same-day delivery service</li>
-          <li>Professional shifting crew</li>
-          <li>Small & Large truck options</li>
-          <li>No hidden local charges</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Estimate</a>
-      </div>
-    </div>
-
-    <!-- Loading/Unloading -->
-    <div class="service-detail-card">
-      <div class="service-img"
-        style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
-      </div>
-      <div class="service-content">
-        <h2>Packing & Unpacking</h2>
-        <p>Expert packing services using bubble wrap, foam, and sturdy cartons for maximum safety.</p>
-        <ul class="feature-list">
-          <li>Fragile item specialization</li>
-          <li>High-grade industry materials</li>
-          <li>Professional unpacking labor</li>
-          <li>Discarding waste materials</li>
-        </ul>
-        <a href="contact.html" class="btn">Hire Packers</a>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- ================= CTA ================= -->
-  <section class="cta">
-    <h2>Experience a Stress-Free Move with Us</h2>
-    <p style="margin-bottom: 20px;">Contact us today for a free assessment and customized quote.</p>
-    <a href="contact.html" class="btn">Get Moving Quote</a>
   </section>
 
   <!-- ================= FOOTER ================= -->
-  <footer>
-    <p style="margin-bottom: 10px; color: var(--surface); opacity: 0.9;">📍 Main Head Office: Gaur City Center, Greater Noida</p>
-    © 2026 Satya Packersmovers
+  <footer style="background: #0f172a; color: white; padding: 4rem 0 1rem;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <img src="image/logo.png" alt="Pooja Transport Service" style="height: 50px; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+          <p style="opacity: 0.7; font-size: 0.9rem;">Pooja Transport Service is a leading relocation service provider dedicated to making shifting easy, safe, and affordable for everyone.</p>
+        </div>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1.5rem; color: var(--secondary);">Quick Links</h4>
+          <ul style="opacity: 0.7; font-size: 0.9rem;">
+            <li><a href="index.html" style="color: white; display: block; margin-bottom: 0.5rem;">Home</a></li>
+            <li><a href="about.html" style="color: white; display: block; margin-bottom: 0.5rem;">About Us</a></li>
+            <li><a href="service.html" style="color: white; display: block; margin-bottom: 0.5rem;">Our Services</a></li>
+            <li><a href="contact.html" style="color: white; display: block; margin-bottom: 0.5rem;">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1.5rem; color: var(--secondary);">Contact Us</h4>
+          <p style="opacity: 0.7; font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt"></i> Gaur City Center, Greater Noida</p>
+          <p style="opacity: 0.7; font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fas fa-phone"></i> +91 9211396141</p>
+          <p style="opacity: 0.7; font-size: 0.9rem;"><i class="fas fa-envelope"></i> poojatransportservice3@gmail.com</p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; font-size: 0.8rem; opacity: 0.5;">
+        <p>© 2026 Pooja Transport Service. All Rights Reserved.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- ================= MOBILE CALL ================= -->
-  <div class="mobile-call">
-    <a href="tel:+919211396141">📞 Call Now</a>
+  <!-- ================= STICKY ACTIONS ================= -->
+  <div class="sticky-actions hide-mobile">
+    <a href="https://wa.me/919211396141" class="action-btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919211396141" class="action-btn btn-call"><i class="fas fa-phone"></i></a>
   </div>
 
-  <!-- ================= WHATSAPP ================= -->
-  <a href="https://wa.me/919211396141" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+  <div class="mobile-only-bar">
+    <a href="tel:+919211396141" class="btn btn-primary" style="background-color: var(--primary); color: white;"><i class="fas fa-phone"></i> Call Now</a>
+    <a href="https://wa.me/919211396141" class="btn btn-secondary" style="background-color: var(--secondary); color: var(--text-dark);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
 
 </body>
 

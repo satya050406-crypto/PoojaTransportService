@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap');
 
 :root {
-  --primary: #E63946;      /* Deep Crimson */
-  --primary-dark: #be2834;
-  --secondary: #FFC300;    /* Amber/Gold */
-  --secondary-hover: #e0a800;
+  --primary: #d22b2b;      /* Red from Logo */
+  --primary-dark: #b91c1c;
+  --secondary: #0f172a;    /* Deep Navy Blue from Logo */
+  --secondary-hover: #1e293b;
+
   --bg-color: #F4F7FB;     /* Modern Off-white/Gray */
   --surface: #ffffff;
   --text-main: #1F2933;
