@@ -46,9 +46,22 @@
         <span><i class="fas fa-phone"></i> +91 9211396141</span>
         <span class="hide-mobile"><i class="fas fa-envelope"></i> poojatransportservice3@gmail.com</span>
       </div>
+
+      <div class="gamify-header-info hide-mobile">
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px;">
+          <span style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Trust Level 8</span>
+          <div class="xp-bar-container">
+            <div class="xp-bar-fill" style="width: 82%;"></div>
+          </div>
+        </div>
+        <div class="coin-counter" title="Perfection Coins earned by safe shifting">
+          <i class="fas fa-coins"></i> <span>450</span>
+        </div>
+      </div>
+
       <div class="topbar-info hide-mobile">
-        <span><i class="fas fa-certificate"></i> ISO 9001:2015 Certified</span>
-        <span><i class="fas fa-clock"></i> 24/7 Support Available</span>
+        <span><i class="fas fa-certificate"></i> ISO Certified</span>
+        <span><i class="fas fa-clock"></i> 24/7 Support</span>
       </div>
     </div>
   </div>
@@ -238,6 +251,33 @@
     <a href="https://wa.me/919211396141" class="btn btn-secondary" style="background-color: var(--secondary); color: var(--text-dark);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
   </div>
 
+  <!-- ================= ASSISTANT ================= -->
+  <div class="assistant-chibi">
+    <div class="assistant-bubble" id="assistantBubble">
+      Need a customized solution? 🛠️<br>
+      We tailor our services to your needs!
+    </div>
+    <div class="assistant-avatar">
+      <img src="chibi_assistant_1778682680418.png" alt="Pooja Assistant">
+    </div>
+  </div>
+
+  <script>
+    // Assistant Rotation
+    const messages = [
+      "Need a customized solution? 🛠️<br>We tailor our services to your needs!",
+      "Safe & Secure! 📦<br>We use premium materials for every shift.",
+      "Local or Inter-city? 🚚<br>We cover all major routes in India!"
+    ];
+    let msgIndex = 0;
+    setInterval(() => {
+      const bubble = document.getElementById('assistantBubble');
+      if (bubble) {
+        bubble.innerHTML = messages[msgIndex];
+        msgIndex = (msgIndex + 1) % messages.length;
+      }
+    }, 8000);
+  </script>
 </body>
 
 </html>
