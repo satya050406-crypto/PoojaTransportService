@@ -41,18 +41,6 @@
         <span class="hide-mobile"><i class="fas fa-envelope"></i> poojatransportservice3@gmail.com</span>
       </div>
       
-      <div class="gamify-header-info hide-mobile">
-        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px;">
-          <span style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Trust Level 8</span>
-          <div class="xp-bar-container">
-            <div class="xp-bar-fill" style="width: 82%;"></div>
-          </div>
-        </div>
-        <div class="coin-counter" title="Perfection Coins earned by safe shifting">
-          <i class="fas fa-coins"></i> <span>450</span>
-        </div>
-      </div>
-
       <div class="topbar-info hide-mobile">
         <span><i class="fas fa-certificate"></i> ISO Certified</span>
         <span><i class="fas fa-clock"></i> 24/7 Support</span>
@@ -86,29 +74,26 @@
   <!-- ================= HERO ================= -->
   <section class="new-hero">
     <div class="container hero-content">
-      <div class="hero-text">
+      <div class="hero-text animate-fade">
         <div class="hero-badges">
-          <div class="hero-badge"><i class="fas fa-check-circle"></i> GST Registered</div>
-          <div class="hero-badge"><i class="fas fa-star"></i> 4.9/5 User Rating</div>
+          <div class="hero-badge"><i class="fas fa-certificate"></i> ISO 9001:2015 Certified</div>
+          <div class="hero-badge"><i class="fas fa-star"></i> 4.9/5 Average Rating</div>
         </div>
-        <h1>Relocate With <span>Confidence</span>, Not Stress</h1>
-        <p>Premium Packing & Shifting Services in Delhi, Noida, Ghaziabad & Across India. We handle your belongings like our own.</p>
+        <h1 style="font-weight: 800; letter-spacing: -0.04em;">Relocate with <span style="background: linear-gradient(to right, var(--secondary), #f87171); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Elite</span> Precision</h1>
+        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; opacity: 0.9;">Redefining shifting standards across India. Experience a stress-free transition with our professional, white-glove relocation services.</p>
         
-        <ul style="margin-bottom: 2rem;">
-          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px;">
-            <i class="fas fa-shield-alt" style="color: var(--secondary);"></i> 100% Safe & Damage-Free Guarantee
-          </li>
-          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px;">
-            <i class="fas fa-truck-loading" style="color: var(--secondary);"></i> Professional & Trained In-House Staff
-          </li>
-          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px;">
-            <i class="fas fa-wallet" style="color: var(--secondary);"></i> Transparent Pricing - No Hidden Charges
-          </li>
-        </ul>
+        <div class="hero-features hide-mobile">
+          <div class="h-feat"><i class="fas fa-shield-check"></i> <span>Full Transit Insurance</span></div>
+          <div class="h-feat"><i class="fas fa-user-tie"></i> <span>Executive Crew</span></div>
+          <div class="h-feat"><i class="fas fa-clock"></i> <span>On-Time Guarantee</span></div>
+        </div>
       </div>
 
-      <div class="quote-form-card">
-        <h3>Get a Free Quote</h3>
+      <div class="quote-form-card glass-card animate-fade" style="animation-delay: 0.2s; padding: 2.5rem; max-width: 480px; width: 100%; justify-self: end;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.25rem;">Get a Premium Quote</h3>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Instant response via WhatsApp</p>
+        </div>
         <form id="heroContactForm">
           <div class="form-group">
             <input type="text" id="h-name" placeholder="Full Name" required>
@@ -116,60 +101,52 @@
           <div class="form-group">
             <input type="tel" id="h-mobile" placeholder="Mobile Number" required>
           </div>
-          <div class="form-row">
+          <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
             <div class="form-group">
-              <input type="text" id="h-from" placeholder="From City" required>
+              <input type="text" id="h-from" placeholder="Moving From" required>
             </div>
             <div class="form-group">
-              <input type="text" id="h-to" placeholder="To City" required>
+              <input type="text" id="h-to" placeholder="Moving To" required>
             </div>
           </div>
           <div class="form-group">
             <input type="date" id="h-date" required>
-            <small style="color: #64748b;">Shifting Date</small>
+            <small style="color: var(--text-muted); font-size: 0.7rem; display: block; margin-top: 4px; font-weight: 600;">Preferred Shifting Date</small>
           </div>
           
-          <div style="margin-bottom: 1rem;">
-            <p style="font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-muted);">Quick Select Items:</p>
-            <div style="display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 1rem;">
-              <button type="button" class="btn" style="padding: 4px 8px; font-size: 0.7rem; border: 1px solid #cbd5e1; background: #f8fafc;" onclick="addHomeQuickItem('1 BHK')">+ 1 BHK</button>
-              <button type="button" class="btn" style="padding: 4px 8px; font-size: 0.7rem; border: 1px solid #cbd5e1; background: #f8fafc;" onclick="addHomeQuickItem('2 BHK')">+ 2 BHK</button>
-              <button type="button" class="btn" style="padding: 4px 8px; font-size: 0.7rem; border: 1px solid #cbd5e1; background: #f8fafc;" onclick="addHomeQuickItem('Office')">+ Office</button>
-              <button type="button" class="btn" style="padding: 4px 8px; font-size: 0.7rem; border: 1px solid #cbd5e1; background: #f8fafc;" onclick="addHomeQuickItem('Car')">+ Car</button>
-              <button type="button" class="btn" style="padding: 4px 8px; font-size: 0.7rem; border: 1px solid #cbd5e1; background: #f8fafc;" onclick="addHomeQuickItem('Bike')">+ Bike</button>
-            </div>
+          <div class="form-group" style="margin-top: 1rem;">
+            <textarea id="h-items" placeholder="Briefly list major items (e.g., 2 BHK, Fridge, Sofa...)" style="height: 80px; resize: none;" required></textarea>
           </div>
-
-          <div class="form-group">
-            <textarea id="h-items" placeholder="List Major Items (e.g. Fridge, Sofa, Bed...)" style="height: 80px; resize: none;" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-secondary" style="width: 100%;">
-            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Get Instant Quote
+          <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 0.75rem; padding: 1rem; box-shadow: var(--shadow-lg);">
+            <i class="fab fa-whatsapp" style="margin-right: 10px; font-size: 1.1rem;"></i> Get Quote Now
           </button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ================= STATS ================= -->
-  <section class="stats-section">
+  <!-- ================= FLOATING STATS ================= -->
+  <section class="floating-stats">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <h4>10+</h4>
-          <p>Years Experience</p>
+      <div class="stats-wrapper glass-card">
+        <div class="stat-item">
+            <span class="stat-num">12+</span>
+            <span class="stat-txt">Years Excellence</span>
         </div>
-        <div class="stat-card">
-          <h4>15K+</h4>
-          <p>Happy Shifting</p>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">18K+</span>
+            <span class="stat-txt">Happy Relocations</span>
         </div>
-        <div class="stat-card">
-          <h4>100%</h4>
-          <p>Safety Record</p>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">50+</span>
+            <span class="stat-txt">Cities Covered</span>
         </div>
-        <div class="stat-card">
-          <h4>50+</h4>
-          <p>Cities Served</p>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-txt">Safety Record</span>
         </div>
       </div>
     </div>
@@ -178,42 +155,42 @@
   <!-- ================= SERVICES ================= -->
   <section class="section-padding" id="services">
     <div class="container">
-      <div class="text-center" style="margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; color: var(--primary);">Our Expert Services</h2>
-        <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">Comprehensive relocation solutions tailored to your specific needs, ensuring a smooth transition every time.</p>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem;">
+        <div>
+            <h2 style="font-size: 3rem; color: var(--primary);">Bespoke Shifting <br>Services</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; max-width: 500px;">Tailored logistics solutions for those who value their time and belongings.</p>
+        </div>
+        <a href="service.html" class="btn" style="border: 1.5px solid var(--primary); padding: 0.8rem 2rem;">Explore All Services</a>
       </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="House Shifting">
+      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2.5rem;">
+        <div class="service-card glass-card" style="padding: 0; border: none; overflow: hidden;">
+          <div class="service-img" style="height: 280px;">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" style="height: 100%; object-fit: cover;">
           </div>
-          <div class="service-content">
-            <h3>House Shifting</h3>
-            <p>From fragile glassware to heavy furniture, we pack your home with care and deliver it safely to your new destination.</p>
-            <a href="service.html" class="text-primary" style="font-weight: 600; font-size: 0.9rem; display: block; margin-top: 1rem;">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" alt="Office Shifting">
-          </div>
-          <div class="service-content">
-            <h3>Office Relocation</h3>
-            <p>Minimize downtime with our efficient corporate shifting services. We handle IT equipment and files with extreme precision.</p>
-            <a href="service.html" class="text-primary" style="font-weight: 600; font-size: 0.9rem; display: block; margin-top: 1rem;">Learn More <i class="fas fa-arrow-right"></i></a>
+          <div class="service-content" style="padding: 2.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Residential</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">White-glove home relocation with meticulous packing of every fragile memory.</p>
           </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-img">
-            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" alt="Car Transport">
+        <div class="service-card glass-card" style="padding: 0; border: none; overflow: hidden;">
+          <div class="service-img" style="height: 280px;">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" style="height: 100%; object-fit: cover;">
           </div>
-          <div class="service-content">
-            <h3>Car & Bike Transport</h3>
-            <p>Secure vehicle transportation across India using specialized carriers. Doorstep pick-up and delivery included.</p>
-            <a href="service.html" class="text-primary" style="font-weight: 600; font-size: 0.9rem; display: block; margin-top: 1rem;">Learn More <i class="fas fa-arrow-right"></i></a>
+          <div class="service-content" style="padding: 2.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Corporate</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">Efficient office transitions with specialized handling of IT infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="service-card glass-card" style="padding: 0; border: none; overflow: hidden;">
+          <div class="service-img" style="height: 280px;">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" style="height: 100%; object-fit: cover;">
+          </div>
+          <div class="service-content" style="padding: 2.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Vehicles</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">Secure transportation of luxury cars and bikes via specialized carriers.</p>
           </div>
         </div>
       </div>
@@ -221,33 +198,41 @@
   </section>
 
   <!-- ================= WHY CHOOSE US ================= -->
-  <section class="section-padding bg-light">
+  <section class="section-padding" style="background: #f8fafc;">
     <div class="container">
-      <div class="text-center" style="margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; color: var(--primary);">Why Pooja Transport Service?</h2>
-        <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">We don't just move boxes; we move your memories and valuables with the respect they deserve.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
-          <h4>Verified Professionals</h4>
-          <p>Our team consists of background-verified and highly trained packing experts.</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+        <div style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-premium);">
+            <div class="glass-card" style="position: absolute; bottom: -2rem; right: -2rem; padding: 2rem; max-width: 250px;">
+                <p style="font-weight: 800; font-size: 1.25rem; color: var(--secondary);">100% Damage-Free</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Guaranteed by our exclusive 5-layer packing tech.</p>
+            </div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-box-open"></i></div>
-          <h4>Premium Packing</h4>
-          <p>We use 5-layer corrugated sheets, bubble wrap, and foam for maximum protection.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-truck"></i></div>
-          <h4>On-Time Delivery</h4>
-          <p>We value your time. Our logistics network ensures your goods reach on schedule.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
-          <h4>Affordable Rates</h4>
-          <p>High-quality service at competitive market prices with zero hidden costs.</p>
+        <div>
+            <h2 style="font-size: 3rem; margin-bottom: 2rem;">Why the Elite <br>Choose Pooja</h2>
+            <div style="display: grid; gap: 2rem;">
+                <div style="display: flex; gap: 1.5rem;">
+                    <i class="fas fa-user-shield" style="font-size: 2rem; color: var(--secondary);"></i>
+                    <div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Verified Staff</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Every crew member undergoes rigorous background checks and training.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1.5rem;">
+                    <i class="fas fa-truck-loading" style="font-size: 2rem; color: var(--secondary);"></i>
+                    <div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Modern Fleet</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">GPS-enabled, well-maintained vehicles for seamless tracking and transit.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1.5rem;">
+                    <i class="fas fa-wallet" style="font-size: 2rem; color: var(--secondary);"></i>
+                    <div>
+                        <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Transparent Pricing</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">No hidden fees. We provide clear, itemized quotes that we stand by.</p>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
@@ -255,124 +240,109 @@
 
   <!-- ================= PROCESS ================= -->
   <section class="section-padding">
+  <!-- ================= PROCESS ================= -->
+  <section class="section-padding" style="background: white;">
     <div class="container">
-      <div class="text-center" style="margin-bottom: 4rem;">
-        <h2 style="font-size: 2.5rem; color: var(--primary);">Our Simple 4-Step Process</h2>
+      <div class="text-center" style="margin-bottom: 5rem;">
+        <h2 style="font-size: 3rem; color: var(--primary);">Seamless 4-Step <br>Relocation</h2>
       </div>
 
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="step-number">1</div>
-          <h4 style="margin-bottom: 0.5rem;">Free Consultation</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">Get a detailed quote based on your requirements.</p>
+      <div class="process-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+        <div class="process-step" style="text-align: center;">
+          <div class="step-num-premium">01</div>
+          <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Consultation</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Detailed mapping of your relocation needs and item audit.</p>
         </div>
-        <div class="process-step">
-          <div class="step-number">2</div>
-          <h4 style="margin-bottom: 0.5rem;">Expert Packing</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">We pack everything using high-quality materials.</p>
+        <div class="process-step" style="text-align: center;">
+          <div class="step-num-premium">02</div>
+          <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Elite Packing</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">5-layer specialized packing using premium imported materials.</p>
         </div>
-        <div class="process-step">
-          <div class="step-number">3</div>
-          <h4 style="margin-bottom: 0.5rem;">Safe Transit</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">Your goods are shipped in secured containers.</p>
+        <div class="process-step" style="text-align: center;">
+          <div class="step-num-premium">03</div>
+          <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Secure Transit</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Real-time GPS tracking in weather-sealed specialized containers.</p>
         </div>
-        <div class="process-step">
-          <div class="step-number">4</div>
-          <h4 style="margin-bottom: 0.5rem;">Unpacking</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">We help you settle in your new home safely.</p>
+        <div class="process-step" style="text-align: center;">
+          <div class="step-num-premium">04</div>
+          <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Assisted Setup</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Professional unpacking and systematic arrangement at your new home.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= REAL WORK GALLERY ================= -->
-  <section class="section-padding bg-white">
+  <!-- ================= PORTFOLIO ================= -->
+  <section class="section-padding" style="background: #020617; color: white;">
     <div class="container">
-      <div class="text-center" style="margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; color: var(--primary);">Real Shifting Excellence</h2>
-        <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">See how we handle your precious belongings with professional packing and safe transportation.</p>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem;">
+        <div>
+            <h2 style="font-size: 3rem; color: white;">Crafting Perfect <br>Movements</h2>
+            <p style="color: rgba(255,255,255,0.6); margin-top: 1rem; max-width: 500px;">A glimpse into our high-precision packing and transportation standards.</p>
+        </div>
       </div>
       
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="image/packing1.jpg" alt="Cleaning Packing">
-          <div class="gallery-overlay">
-            <h4>Scientific Packing</h4>
-            <p>Multiple layers of protection for every item.</p>
-          </div>
+      <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+        <div class="gallery-item-premium">
+          <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop">
+          <div class="gallery-label">Scientific Packing</div>
         </div>
-        <div class="gallery-item">
-          <img src="image/packing2.jpg" alt="Appliance Handling">
-          <div class="gallery-overlay">
-            <h4>Appliance Handling</h4>
-            <p>Specialized packing for heavy electronics.</p>
-          </div>
+        <div class="gallery-item-premium">
+          <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=800&auto=format&fit=crop">
+          <div class="gallery-label">Secure Loading</div>
         </div>
-        <div class="gallery-item">
-          <img src="image/packing3.jpg" alt="Secure Loading">
-          <div class="gallery-overlay">
-            <h4>Secure Loading</h4>
-            <p>Professional space management in transit.</p>
-          </div>
+        <div class="gallery-item-premium">
+          <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=800&auto=format&fit=crop">
+          <div class="gallery-label">Fragile Care</div>
         </div>
-        <div class="gallery-item">
-          <img src="image/packing4.jpg" alt="Furniture Protection">
-          <div class="gallery-overlay">
-            <h4>Damage-Free Delivery</h4>
-            <p>Ensuring your furniture arrives scratch-free.</p>
-          </div>
+        <div class="gallery-item-premium">
+          <img src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?q=80&w=800&auto=format&fit=crop">
+          <div class="gallery-label">Safe Arrival</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ================= TESTIMONIALS ================= -->
-
-  <section class="section-padding bg-primary" style="color: white; background-color: var(--primary);">
+  <section class="section-padding" style="background: #fcfcfd;">
     <div class="container">
-      <div class="text-center" style="margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; color: white;">What Our Clients Say</h2>
+      <div class="text-center" style="margin-bottom: 5rem;">
+        <h2 style="font-size: 3rem; color: var(--primary);">Client Voices</h2>
       </div>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p style="color: var(--text-dark); margin-bottom: 1.5rem; font-style: italic;">"Shifted my 3BHK from Noida to Lucknow. The team was extremely professional and handled my piano with great care. Highly recommended!"</p>
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="width: 50px; height: 50px; background: #e2e8f0; border-radius: 50%;"></div>
+      <div class="testimonials-grid-premium" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem;">
+        <div class="testimonial-card-premium glass-card" style="padding: 3rem; position: relative;">
+          <div style="color: var(--secondary); font-size: 2rem; margin-bottom: 1.5rem;"><i class="fas fa-quote-left"></i></div>
+          <p style="font-size: 1.1rem; line-height: 1.7; font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"The precision with which they handled our grand piano was remarkable. Truly elite service."</p>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 45px; height: 45px; background: #e2e8f0; border-radius: 50%;"></div>
             <div>
-              <h5 style="color: var(--text-dark);">Amit Sharma</h5>
-              <p style="font-size: 0.8rem; color: var(--text-muted);">Noida Sector 62</p>
+              <h5 style="font-weight: 700;">Amit Sharma</h5>
+              <p style="font-size: 0.75rem; color: var(--text-muted);">Noida Sector 62</p>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p style="color: var(--text-dark); margin-bottom: 1.5rem; font-style: italic;">"Very polite staff and transparent pricing. No hidden charges were asked at the end. The delivery was right on time."</p>
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="width: 50px; height: 50px; background: #e2e8f0; border-radius: 50%;"></div>
+        <div class="testimonial-card-premium glass-card" style="padding: 3rem; position: relative;">
+          <div style="color: var(--secondary); font-size: 2rem; margin-bottom: 1.5rem;"><i class="fas fa-quote-left"></i></div>
+          <p style="font-size: 1.1rem; line-height: 1.7; font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"Zero hidden costs and absolute professionalism. The team arrived on time and finished early."</p>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 45px; height: 45px; background: #e2e8f0; border-radius: 50%;"></div>
             <div>
-              <h5 style="color: var(--text-dark);">Priya Verma</h5>
-              <p style="font-size: 0.8rem; color: var(--text-muted);">Ghaziabad</p>
+              <h5 style="font-weight: 700;">Priya Verma</h5>
+              <p style="font-size: 0.75rem; color: var(--text-muted);">Ghaziabad</p>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-          </div>
-          <p style="color: var(--text-dark); margin-bottom: 1.5rem; font-style: italic;">"Best experience with packers and movers so far. They even helped me assemble the beds in the new house. Great service!"</p>
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="width: 50px; height: 50px; background: #e2e8f0; border-radius: 50%;"></div>
+        <div class="testimonial-card-premium glass-card" style="padding: 3rem; position: relative;">
+          <div style="color: var(--secondary); font-size: 2rem; margin-bottom: 1.5rem;"><i class="fas fa-quote-left"></i></div>
+          <p style="font-size: 1.1rem; line-height: 1.7; font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"Our office relocation was seamless. Minimal downtime and everything arrived perfectly."</p>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 45px; height: 45px; background: #e2e8f0; border-radius: 50%;"></div>
             <div>
-              <h5 style="color: var(--text-dark);">Rahul Singh</h5>
-              <p style="font-size: 0.8rem; color: var(--text-muted);">Greater Noida</p>
+              <h5 style="font-weight: 700;">Rahul Singh</h5>
+              <p style="font-size: 0.75rem; color: var(--text-muted);">Greater Noida</p>
             </div>
           </div>
         </div>
@@ -443,17 +413,6 @@
   <div class="mobile-only-bar">
     <a href="tel:+919211396141" class="btn btn-primary" style="background-color: var(--primary); color: white;"><i class="fas fa-phone"></i> Call Now</a>
     <a href="https://wa.me/919211396141" class="btn btn-secondary" style="background-color: var(--secondary); color: var(--text-dark);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-  </div>
-
-  <!-- ================= ASSISTANT ================= -->
-  <div class="assistant-chibi">
-    <div class="assistant-bubble" id="assistantBubble">
-      Hi! I'm Pooja. 👋<br>
-      Did you know we offer <strong>Free Transit Insurance</strong> today?
-    </div>
-    <div class="assistant-avatar">
-      <img src="chibi_assistant_1778682680418.png" alt="Pooja Assistant">
-    </div>
   </div>
 
   <script>
