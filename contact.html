@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="Css/redesign.css">
   <link rel="icon" type="image/png" href="favicon.ico.png">
+  <script src="main.js" defer></script>
   <style>
     .page-hero {
       background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2000&auto=format&fit=crop') center/cover;
@@ -32,6 +33,22 @@
 </head>
 
 <body>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="image/logo.png" alt="Pooja Transport Service">
+      <div class="drawer-close" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" onclick="toggleMenu()"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html" onclick="toggleMenu()"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="service.html" onclick="toggleMenu()"><i class="fas fa-truck"></i> Services</a>
+      <a href="contact.html" onclick="toggleMenu()"><i class="fas fa-envelope"></i> Contact</a>
+      <hr style="margin: 1rem 0; opacity: 0.1;">
+      <a href="tel:+919211396141" class="btn btn-primary" style="width: 100%;"><i class="fas fa-phone"></i> Call Now</a>
+    </nav>
+  </div>
 
   <!-- ================= TOPBAR ================= -->
   <div class="new-topbar">
@@ -74,6 +91,9 @@
         <a href="service.html">Services</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
       <a href="tel:+919211396141" class="btn btn-primary hide-mobile">
         <i class="fas fa-headset" style="margin-right: 8px;"></i> Support
       </a>
@@ -263,61 +283,21 @@
   </div>
 
   <script>
-    // Assistant Rotation
-    const messages = [
-      "Ready to move? 🚀<br>Fill the form and earn 50 Perfection Coins!",
-      "Need help with items? 📦<br>Use the quick-select buttons below.",
-      "Get a response in 5 mins! ⏱️<br>We're faster than lightning!"
-    ];
-    let msgIndex = 0;
-    setInterval(() => {
-      const bubble = document.getElementById('assistantBubble');
-      if (bubble) {
-        bubble.innerHTML = messages[msgIndex];
-        msgIndex = (msgIndex + 1) % messages.length;
-      }
-    }, 8000);
-
     function addQuickItem(itemName) {
-      var textarea = document.getElementById('items');
-      if (textarea.value) {
-        textarea.value += ', ' + itemName;
-      } else {
-        textarea.value = itemName;
-      }
-      // Earn Coins Effect
-      let coins = document.querySelector('.coin-counter span');
-      if (coins) {
-        let current = parseInt(coins.innerText);
-        coins.innerText = current + 10;
-        coins.parentElement.style.transform = 'scale(1.2)';
-        setTimeout(() => coins.parentElement.style.transform = 'scale(1)', 200);
-      }
+      addQuickItemShared(itemName, 'items');
     }
 
     document.getElementById('contactForm')?.addEventListener('submit', function (e) {
       e.preventDefault();
-
-      var name = document.getElementById('name').value;
-      var mobile = document.getElementById('mobile').value;
-      var from = document.getElementById('from').value;
-      var to = document.getElementById('to').value;
-      var floor = document.getElementById('floor').value;
-      var date = document.getElementById('date').value;
-      var items = document.getElementById('items').value;
-
-      var whatsappMessage = "Hello Pooja Transport Service, I want to request a Shifting Quote." +
-        "%0a%0a*--- Move Details ---*" +
-        "%0a*Name:* " + name +
-        "%0a*Mobile:* " + mobile +
-        "%0a*From:* " + from +
-        "%0a*To:* " + to +
-        "%0a*Floor:* " + floor +
-        "%0a*Date:* " + date +
-        "%0a*Items:* " + items;
-
-      var whatsappUrl = "https://wa.me/919211396141?text=" + whatsappMessage;
-      window.open(whatsappUrl, '_blank');
+      sendWhatsAppQuote({
+        name: document.getElementById('name').value,
+        mobile: document.getElementById('mobile').value,
+        from: document.getElementById('from').value,
+        to: document.getElementById('to').value,
+        floor: document.getElementById('floor').value,
+        date: document.getElementById('date').value,
+        items: document.getElementById('items').value
+      });
     });
   </script>
 </body>

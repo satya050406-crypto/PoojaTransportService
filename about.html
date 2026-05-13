@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="Css/redesign.css">
   <link rel="icon" type="image/png" href="favicon.ico.png">
+  <script src="main.js" defer></script>
   <style>
     .page-hero {
       background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop') center/cover;
@@ -23,6 +24,22 @@
 </head>
 
 <body>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="image/logo.png" alt="Pooja Transport Service">
+      <div class="drawer-close" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" onclick="toggleMenu()"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html" onclick="toggleMenu()"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="service.html" onclick="toggleMenu()"><i class="fas fa-truck"></i> Services</a>
+      <a href="contact.html" onclick="toggleMenu()"><i class="fas fa-envelope"></i> Contact</a>
+      <hr style="margin: 1rem 0; opacity: 0.1;">
+      <a href="tel:+919211396141" class="btn btn-primary" style="width: 100%;"><i class="fas fa-phone"></i> Call Now</a>
+    </nav>
+  </div>
 
   <!-- ================= TOPBAR ================= -->
   <div class="new-topbar">
@@ -65,6 +82,9 @@
         <a href="service.html">Services</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
       <a href="tel:+919211396141" class="btn btn-primary hide-mobile">
         <i class="fas fa-headset" style="margin-right: 8px;"></i> Contact Us
       </a>
@@ -236,22 +256,6 @@
     </div>
   </div>
 
-  <script>
-    // Assistant Rotation
-    const messages = [
-      "Curious about our journey? 📖<br>We've been moving happiness since 2014!",
-      "Transparency is our key! 💎<br>Check out our core values below.",
-      "Got questions? 💬<br>Our 24/7 support team is just a call away!"
-    ];
-    let msgIndex = 0;
-    setInterval(() => {
-      const bubble = document.getElementById('assistantBubble');
-      if (bubble) {
-        bubble.innerHTML = messages[msgIndex];
-        msgIndex = (msgIndex + 1) % messages.length;
-      }
-    }, 8000);
-  </script>
 </body>
 
 </html>
