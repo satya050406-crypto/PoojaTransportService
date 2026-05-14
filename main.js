@@ -52,5 +52,5 @@ function sendWhatsAppQuote(data) {
         (data.floor ? "%0a*Floor:* " + data.floor : "") +
         "%0a*Items:* " + data.items;
 
-    window.open("https://wa.me/919211396141?text=" + message, '_blank');
+    window.open("https://wa.me/919910204916?text=" + message, '_blank');
 }
